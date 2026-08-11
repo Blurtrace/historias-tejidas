@@ -31,3 +31,76 @@ historias-tejidas/
     ├── catalogo.js              <-- Filtros de productos y categorías
     ├── personalizador.js        <-- Lógica para cambiar opciones del modelo base
     └── chatbot.js               <-- Lógica del botón flotante y respuestas automáticas
+
+    HEADER
+│
+├── Logo
+├── Inicio
+├── Catálogo
+├── Personaliza tu amigurumi
+├── Nuestra historia
+├── Reseñas
+├── FAQ
+└── 🛒 Carrito
+
+HERO
+│
+├── Imagen
+├── Nombre
+├── Eslogan
+├── Descripción
+├── Botón "Ver catálogo"
+└── Botón "Crear mi amigurumi"
+
+INTRODUCCIÓN A LA MARCA
+│
+└── ¿Qué hace especial a Historias Tejidas?
+
+DESTACADOS
+│
+└── Productos destacados
+
+CATEGORÍAS
+│
+├── Animales
+├── Personajes
+├── Parejas
+├── Regalos
+└── Personalizados
+
+¿CÓMO FUNCIONA?
+│
+├── Elige una base
+├── Personaliza
+├── Confirma
+└── Recibe tu historia tejida
+
+PERSONALIZACIÓN
+│
+└── CTA para crear un amigurumi
+
+RESEÑAS
+│
+└── Testimonios
+
+SOBRE NOSOTROS
+│
+└── Historia / filosofía de la marca
+
+FAQ
+│
+└── Preguntas frecuentes
+
+CTA FINAL
+│
+└── "¿Qué historia quieres tejer?"
+
+FOOTER
+│
+├── Navegación
+├── Contacto
+├── Redes
+├── Políticas
+└── Copyright
+
+CHATBOT FLOTANTE
