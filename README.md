@@ -52,55 +52,56 @@ HERO
 ├── Botón "Ver catálogo"
 └── Botón "Crear mi amigurumi"
 
-INTRODUCCIÓN A LA MARCA
+HEADER
 │
-└── ¿Qué hace especial a Historias Tejidas?
-
-DESTACADOS
-│
-└── Productos destacados
-
-CATEGORÍAS
-│
-├── Animales
-├── Personajes
-├── Parejas
-├── Regalos
-└── Personalizados
-
-¿CÓMO FUNCIONA?
-│
-├── Elige una base
+├── Logo
+├── Inicio
+├── Catálogo
 ├── Personaliza
-├── Confirma
-└── Recibe tu historia tejida
+└── Carrito
 
-PERSONALIZACIÓN
+MAIN
 │
-└── CTA para crear un amigurumi
-
-RESEÑAS
+├── HERO
+│   ├── Título
+│   ├── Subtítulo
+│   ├── Descripción
+│   └── CTAs
 │
-└── Testimonios
-
-SOBRE NOSOTROS
+├── INTRODUCCIÓN A LA MARCA
+│   └── ¿Qué hace especial a Historias Tejidas?
 │
-└── Historia / filosofía de la marca
-
-FAQ
+├── DESTACADOS
+│   └── Productos destacados
 │
-└── Preguntas frecuentes
-
-CTA FINAL
+├── CATEGORÍAS
+│   ├── Animales
+│   ├── Personajes
+│   ├── Parejas
+│   ├── Regalos
+│   └── Personalizados
 │
-└── "¿Qué historia quieres tejer?"
+├── ¿CÓMO FUNCIONA?
+│   ├── Elige una base
+│   ├── Personaliza
+│   ├── Confirma
+│   └── Recibe tu historia tejida
+│
+├── PERSONALIZACIÓN
+│   └── CTA
+│
+├── RESEÑAS
+│   └── Testimonios
+│
+├── SOBRE NOSOTROS
+│   └── Historia / filosofía
+│
+├── FAQ
+│   └── Preguntas frecuentes
+│
+└── CTA FINAL
+    └── ¿Qué historia quieres tejer?
 
 FOOTER
-│
-├── Navegación
-├── Contacto
-├── Redes
-├── Políticas
-└── Copyright
 
 CHATBOT FLOTANTE

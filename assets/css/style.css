@@ -1,0 +1,523 @@
+:root {
+
+    /* Colores */
+    --blanco: #FFFFFF;
+    --rosa-fondo: #FFF3F0;
+    --rosa-crema: #FAF0EB;
+    --rosa-palido: #F6D6CD;
+    --rosa-suave: #F4A29E;
+    --rosa-medio: #E8827C;
+    --rosa-coral: #D96B64;
+    --rosa-principal: #C74B59;
+    --rosa-fuerte: #B13A48;
+    --frambuesa: #8F2D3B;
+    --vino-rosa: #6B202A;
+    --rosa-oscuro: #4A141C;
+
+
+    /* Gradiante */
+
+    --gradiente: linear-gradient(180deg,
+            var(--rosa-crema) 0%,
+            var(--rosa-suave) 40%,
+            var(--rosa-medio) 80%,
+            var(--rosa-fuerte) 100%);
+
+    --gradiente-capa: linear-gradient(180deg,
+            rgba(250, 240, 235, 0.4) 0%,
+            rgba(74, 20, 28, 0.45) 30%,
+            rgba(107, 32, 42, 0.25) 100%);
+
+    /* Border-radius */
+
+    --border-rdp: 30px;
+    --border-rdpl: 999px;
+
+    /* font-weidth */
+
+    --negrita: 600;
+    --normal: 400;
+    --fina: 200;
+
+    /* transicion */
+    --transicion: .3s ease;
+    --transicion-lenta: .5s ease;
+
+    /* Sombra */
+
+    --sombra-suave: 0 3px 12px rgba(0, 0, 0, 0.4);
+    --sombra-normal: 0 3px 15px rgba(0, 0, 0, 0.5);
+    --sombra-pequeña: 0 3px 5px rgba(133, 48, 104, 0.219);
+
+    /*Padding*/
+
+    --padding-05: 4px 8px;
+    /* Elementos muy compactos (tags, badges) */
+    --padding-1: 8px 14px;
+    /* Botones pequeños */
+    --padding-2: 12px 18px;
+    /* Tarjetas compactas o inputs */
+    --padding-3: 16px 24px;
+    /* Padding estándar */
+    --padding-4: 24px 32px;
+    /* Tarjetas grandes o contenedores */
+    --padding-5: 32px 40px;
+    /* Secciones o contenedores amplios */
+    --padding-6: 48px 40px;
+    /* Elementos muy espaciosos o héroes */
+
+    /* Márgenes*/
+    --margin-bt: 0.8rem;
+    --margin-bt0: 1rem;
+    --margin-1: 10px;
+    /* Espacios muy cortos */
+    --margin-2: 15px 10px;
+    /* Para elementos que necesitan aire lateral y vertical */
+    --margin-3: 20px;
+    /* Margen estándar entre elementos */
+    --margin-4: 30px 20px;
+    /* Para separar secciones o contenedores grandes */
+    --margin-5: 0 0 50px auto;
+    /* Márgenes grandes verticales y centrado automático horizontal*/
+}
+
+/* Body */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--gradiente);
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--rosa-crema);
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* ----------------------------------------------------------------------------
+======================================GENERAL======================================
+--------------------------------------------------------------------------------*/
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: var(--negrita);
+    color: var(--rosa-principal);
+    margin-bottom: var(--margin-bt0);
+    text-shadow: var(--sombra-pequeña);
+}
+
+h3 {
+    text-align: center;
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    font-weight: var(--negrita);
+    color: var(--rosa-principal);
+    margin-bottom: var(--margin-bt);
+    text-shadow: var(--sombra-pequeña);
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: var(--negrita);
+    color: var(--rosa-principal);
+    margin-bottom: var(--margin-bt);
+}
+
+p {
+    text-align: left;
+    line-height: 1.7;
+    margin-bottom: var(--margin-bt);
+    color: var(--rosa-oscuro);
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+section {
+    max-width: 1200px;
+    margin: var(--margin-3);
+    padding: var(--padding-4);
+    align-items: center;
+
+    background-color: var(--rosa-crema);
+    border-radius: var(--border-rdp);
+
+    box-shadow: var(--sombra-normal);
+
+
+}
+
+article {
+    margin-bottom: var(--margin-bt);
+    background-color: var(--rosa-fondo);
+}
+
+aside {
+    background: var(--rosa-fondo);
+    color: var(--rosa-principal);
+    text-align: center;
+    font-weight: var(--negrita);
+    border-radius: var(--border-rdpl);
+    margin: var(--margin-3);
+    padding: var(--padding-1);
+
+}
+
+
+/* ----------------------------------------------------------------------------
+======================================HEADER======================================
+--------------------------------------------------------------------------------*/
+
+header {
+    max-width: 1200px;
+    margin: var(--margin-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+
+}
+
+
+header img {
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-rdp);
+    transition:
+        transform var(--transicion);
+}
+
+header img:hover {
+    transform: translateY(-3px);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    background: var(--rosa-palido);
+    border-radius: var(--border-rdp);
+
+    padding: var(--padding-1);
+
+    color: var(--rosa-principal);
+    text-decoration: none;
+    font-weight: var(--negrita);
+
+    transition:
+        color var(--transicion),
+        background-color var(--transicion),
+        transform var(--transicion);
+
+    border: 2px solid var(--rosa-suave);
+
+}
+
+nav a:hover {
+    background: var(--rosa-principal);
+    color: var(--rosa-crema);
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------------------------------------------
+======================================HERO======================================== 
+--------------------------------------------------------------------------------*/
+
+.hero {
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    max-height: 550px;
+    overflow: hidden;
+    margin: var(--margin-5);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    height: auto;
+    padding: var(--padding-6);
+    border-radius: var(--border-rdp);
+    box-shadow: var(--sombra-suave);
+    transition:
+        transform var(--transicion-lenta);
+}
+
+.hero:hover {
+    transform: translateY(-3px);
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: var(--gradiente-capa);
+
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    width: min(750px, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: var(--normal);
+    letter-spacing: 2px;
+    color: var(--blanco);
+    text-shadow: var(--sombra-suave);
+
+}
+
+.hero h2 {
+    margin: var(--margin-1);
+    padding: 0;
+    text-align: center;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.05;
+    font-weight: var(--negrita);
+    color: var(--rosa-fondo);
+    text-shadow: var(--sombra-normal);
+    max-width: 100%;
+
+
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--rosa-crema);
+    text-shadow: var(--sombra-suave);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: var(--margin-1);
+    width: 100%;
+    justify-content: center;
+}
+
+.button-hero a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: var(--padding-2);
+    border-radius: var(--border-rdpl);
+    font-weight: 600;
+    transition: var(--transicion-lenta);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    box-sizing: border-box;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--rosa-crema), var(--rosa-medio));
+    color: var(--rosa-principal);
+}
+
+.button-hero a:hover {
+    transform: translateY(-3px);
+    background: var(--rosa-principal);
+    color: var(--blanco);
+}
+
+/* ============================================================================
+   ESTILOS DE LA BARRA DE DESPLAZAMIENTO (SCROLLBAR)
+============================================================================ */
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--rosa-fondo);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--rosa-suave);
+    border-radius: 999px;
+    border: 2px solid var(--rosa-fondo);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--rosa-principal);
+}
+
+/* ----------------------------------------------------------------------------
+======================================TARJETAS======================================== 
+--------------------------------------------------------------------------------*/
+
+.tarjeta-container {
+    background: var(--rosa-medio);
+    padding: var(--padding-4);
+    border-radius: var(--border-rdp);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--margin-4);
+    margin: var(--margin-3);
+
+}
+
+.tarjeta {
+    background: var(--rosa-crema);
+    border-radius: var(--border-rdp);
+
+    padding: var(--padding-3);
+    box-shadow: var(--sombra-normal);
+    transition:
+        transform var(--transicion);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-rdp);
+    object-fit: cover;
+    margin-bottom: 15px }
+
+.tarjeta h3 {
+    margin: 0 0 12px 0;
+}
+
+
+.tarjeta p {
+    text-align: center;
+    margin-bottom: var(--margin-bt0);
+}
+
+.tarjeta:hover {
+    transform: translateY(-2px);
+}
+
+.tarjeta .button {
+    align-self: center;
+    margin-top: 10px;
+}
+
+
+
+/* ------------------------------------------------------------------------------
+======================================Button====================================== 
+--------------------------------------------------------------------------------*/
+
+.button {
+    background: var(--rosa-palido);
+    border-radius: var(--border-rdp);
+
+    padding: var(--padding-1);
+
+    color: var(--rosa-principal);
+    text-decoration: none;
+    font-weight: var(--negrita);
+
+    transition:
+        color var(--transicion),
+        background-color var(--transicion),
+        transform var(--transicion);
+
+    border: 2px solid var(--rosa-suave);
+    text-align: center;
+
+    max-width: 220px;
+    
+
+}
+
+.button:hover {
+    background: var(--rosa-principal);
+    color: var(--rosa-crema);
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+/* ------------------------------------------------------------------------------
+======================================INDEX====================================== 
+--------------------------------------------------------------------------------*/
+
+
+.propuesta-valor p {
+    text-align: center;
+}
+
+.producto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centra horizontalmente el título, precio y botón */
+    text-align: center;   /* Centra el texto */
+    width: 100%;          /* Asegura que ocupe el ancho disponible */
+}
+
+/* Aseguramos que el botón dentro de la info se centre perfectamente */
+.producto-info .button {
+    align-self: center;
+    margin-top: 10px;
+}

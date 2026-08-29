@@ -1,60 +1,457 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historias Tejidas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header>
-        <img src="assets/img/logo-sin-texto.png" alt="Logo de historias tejidas, un oso y conejos tejidos abrazando un corazón, con el nombre del emprendimiento en grande.">
-        <nav id="navegador-principal">
+        <img src="assets/img/logo-sin-texto.png"
+            alt="Logo de historias tejidas, un oso y conejos tejidos abrazando un corazón, con el nombre del emprendimiento en grande.">
+        <nav>
             <a href="index.html">Inicio</a>
             <a href="catalogo.html">Catálogo</a>
             <a href="personaliza.html">Personaliza</a>
             <a href="carrito.html">Carrito</a>
             <!--Continuarlo y el emoji de carrito-->
         </nav>
-    </header>     
+    </header>
     <main>
         <div class="hero">
-            <img src="assets/img/lanas-tipo-fondo.png" alt="Lanas de varios tonos de rosado alineadas de forma consecutiva con flores alrededor.">
-            <h1>Historias Tejidas</h1>
-            <h2>Porque tu recuerdo, merece ser recordado.</h2>
-            <p>Un recuerdo, una persona, un personaje. Tú eliges qué historia llevar por siempre.</p>
-            <div class="button-hero">
-                <a href="catalogo.html">Explorar catálogo</a>
-                <a href="personaliza.html">Crear mi amigurumi</a>
+
+            <div class="hero-overlay"></div>
+            <img src="assets/img/lanas-tipo-fondo.png"
+                alt="Lanas de varios tonos de rosado alineadas de forma consecutiva con flores alrededor.">
+
+            <div class="container">
+                <h1>Historias Tejidas</h1>
+                <h2>Donde el hilo se vuelve recuerdo</h2>
+                <p>Un recuerdo, una persona, un lugar, una mascota, un personaje... <br>
+                    Elige el cómo llevarlo contigo, para que nunca te falte.</p>
+                <div class="button-hero">
+                    <a href="catalogo.html">Explorar catálogo</a>
+                    <a href="personaliza.html">Crear mi amigurumi</a>
+                </div>
             </div>
         </div>
 
         <section class="propuesta-valor">
 
+            <span class="section-label">Nuestra esencia</span>
+
             <h2>Más que un tejido, una historia</h2>
-            <p>Hay regalos que simplemente se entregan. <br>
-            Pero hay otros que hacen recordar por siempre y para siempre.</p>
+            <p>En Historias Tejidas creemos que algunos recuerdos merecen
+                convertirse en algo que puedas tocar, abrazar y conservar.</p>
 
             <div class="tarjeta-container">
-                <div class="tarjeta">
+                <article class="tarjeta">
                     <h3>Un recuerdo</h3>
-                    <p>Convierte un momento especial en algo tangible.</p>
-                </div>
+                    <p>Convierte ese momento que te marcó, te enseñó o te inspira
+                        en algo tangible que puedas conservar. </p>
+                </article>
 
-                <div class="tarjeta">
+                <article class="tarjeta">
                     <h3>Una persona</h3>
-                    <p>Representa a alguien importante para ti.</p>
-                </div>
+                    <p>Lleva contigo a alguien especial a través de una creación
+                        hecha especialmente para representar su esencia.</p>
+                </article>
 
-                <div class="tarjeta">
-                    <h3>Algo muy tuyo</h3>
-                    <p>Crea un diseño inspirado en aquello que te identifica, te apasiona y más.</p>
-                </div>
+                <article class="tarjeta">
+                    <h3>Algo tuyo</h3>
+                    <p>Crea un diseño inspirado en aquello que te identifica,
+                        te apasiona y representa quién eres.</p>
+                </article>
             </div>
 
-            <aside>Porque cada historia puede tener su propia forma.</aside>
+        </section>
+
+        <section class="destacados">
+
+            <span class="section-label">Descubre nuestras creaciones</span>
+
+            <h2>Productos destacados</h2>
+
+            <p>
+                Algunas historias que ya tomaron forma entre hilos, colores
+                y mucho cariño.
+            </p>
+
+            <div class="tarjeta-container">
+
+                <article class="tarjeta">
+
+                    <img src="assets/img/productos/elprincipito.png"
+                        alt="Amigurumi del personaje el principito junto al zorro en la luna con una rosa, de la obra literaria.">
+
+                    <div class="producto-info">
+                        <h3>El Principito-Combo completo</h3>
+                        <p class="precio">$150.000 COP</p>
+                        <a class="button" href="producto-detalle.html">
+                            Ver producto
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="producto-card">
+
+                    <img src="assets/img/productos/conejo.jpg" alt="Amigurumi de conejo tejido">
+
+                    <div class="producto-info">
+                        <h3>Conejito</h3>
+                        <p class="precio">$XX.XXX</p>
+                        <a href="producto-detalle.html">
+                            Ver producto
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="producto-card">
+
+                    <img src="assets/img/productos/pareja.jpg" alt="Amigurumis tejidos de una pareja">
+
+                    <div class="producto-info">
+                        <h3>Dos historias</h3>
+                        <p class="precio">$XX.XXX</p>
+                        <a href="producto-detalle.html">
+                            Ver producto
+                        </a>
+                    </div>
+
+                </article>
+
+                <a class="button" href="catalogo.html">
+                    Ver todo el catálogo
+                </a>
+
+            </div>
 
         </section>
+
+        <section class="categorias">
+
+            <div class="container">
+
+                <span class="section-label">Encuentra tu historia</span>
+
+                <h2>Explora por categoría</h2>
+
+                <div class="categorias-grid">
+
+                    <a href="catalogo.html?categoria=animales" class="categoria">
+                        <img src="assets/img/categorias/animales.jpg" alt="">
+                        <h3>Animales</h3>
+                    </a>
+
+                    <a href="catalogo.html?categoria=personajes" class="categoria">
+                        <img src="assets/img/categorias/personajes.jpg" alt="">
+                        <h3>Personajes</h3>
+                    </a>
+
+                    <a href="catalogo.html?categoria=parejas" class="categoria">
+                        <img src="assets/img/categorias/parejas.jpg" alt="">
+                        <h3>Parejas</h3>
+                    </a>
+
+                    <a href="catalogo.html?categoria=regalos" class="categoria">
+                        <img src="assets/img/categorias/regalos.jpg" alt="">
+                        <h3>Regalos</h3>
+                    </a>
+
+                    <a href="catalogo.html?categoria=personalizados" class="categoria">
+                        <img src="assets/img/categorias/personalizados.jpg" alt="">
+                        <h3>Personalizados</h3>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="como-funciona">
+
+            <div class="container">
+
+                <span class="section-label">Tu historia, paso a paso</span>
+
+                <h2>¿Cómo funciona?</h2>
+
+                <div class="pasos">
+
+                    <article class="paso">
+                        <span class="paso-numero">01</span>
+                        <h3>Elige una base</h3>
+                        <p>
+                            Escoge el tipo de amigurumi que más se acerque
+                            a lo que quieres crear.
+                        </p>
+                    </article>
+
+                    <article class="paso">
+                        <span class="paso-numero">02</span>
+                        <h3>Personaliza</h3>
+                        <p>
+                            Elige colores, detalles y características
+                            para hacerlo único.
+                        </p>
+                    </article>
+
+                    <article class="paso">
+                        <span class="paso-numero">03</span>
+                        <h3>Confirma</h3>
+                        <p>
+                            Revisa tu diseño y confirma los detalles de tu pedido.
+                        </p>
+                    </article>
+
+                    <article class="paso">
+                        <span class="paso-numero">04</span>
+                        <h3>Recibe tu historia tejida</h3>
+                        <p>
+                            Preparamos tu creación y la convertimos
+                            en un recuerdo que puedas conservar.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="personalizacion-home">
+
+            <div class="container">
+
+                <div class="personalizacion-contenido">
+
+                    <span class="section-label">Hazlo tuyo</span>
+
+                    <h2>Tu historia no tiene que parecerse a ninguna otra.</h2>
+
+                    <p>
+                        Cuéntanos qué quieres representar y crea un amigurumi
+                        inspirado en esa persona, mascota, recuerdo o idea
+                        que significa algo para ti.
+                    </p>
+
+                    <a href="personaliza.html">
+                        Crear mi amigurumi
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="resenas">
+
+            <div class="container">
+
+                <span class="section-label">Historias que ya fueron tejidas</span>
+
+                <h2>Lo que dicen quienes nos eligieron</h2>
+
+                <div class="resenas-grid">
+
+                    <article class="resena">
+                        <p>
+                            "El resultado quedó precioso y se sintió todavía
+                            más especial porque estaba hecho pensando en esa persona."
+                        </p>
+                        <span>Cliente</span>
+                    </article>
+
+                    <article class="resena">
+                        <p>
+                            "Me encantó poder elegir los detalles y convertir
+                            una idea que tenía en un amigurumi."
+                        </p>
+                        <span>Cliente</span>
+                    </article>
+
+                    <article class="resena">
+                        <p>
+                            "Fue un regalo completamente diferente y muy personal."
+                        </p>
+                        <span>Cliente</span>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sobre-nosotros">
+
+            <div class="container">
+
+                <div class="sobre-contenido">
+
+                    <span class="section-label">Nuestra historia</span>
+
+                    <h2>Tejemos mucho más que figuras</h2>
+
+                    <p>
+                        Historias Tejidas nació de una idea sencilla:
+                        convertir aquello que significa algo para nosotros
+                        en algo que podamos conservar.
+                    </p>
+
+                    <p>
+                        Cada creación combina tejido, imaginación y detalles
+                        pensados para que cada pieza tenga una historia propia.
+                    </p>
+
+                    <a href="sobre-nosotros.html">
+                        Conoce nuestra historia
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="faq">
+
+            <div class="container">
+
+                <span class="section-label">¿Tienes alguna duda?</span>
+
+                <h2>Preguntas frecuentes</h2>
+
+                <div class="faq-list">
+
+                    <details>
+                        <summary>¿Puedo personalizar un amigurumi?</summary>
+                        <p>
+                            Sí. Puedes crear una pieza basada en una persona,
+                            mascota, personaje, recuerdo o idea.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Cuánto tarda un pedido personalizado?</summary>
+                        <p>
+                            El tiempo depende del diseño y del nivel de personalización.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Puedo hacer un regalo?</summary>
+                        <p>
+                            Sí. Puedes elegir una creación del catálogo
+                            o diseñar una personalizada.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Cómo puedo realizar un pedido?</summary>
+                        <p>
+                            Puedes explorar el catálogo o comenzar directamente
+                            desde la sección de personalización.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <details>
+            <summary>Pregunta</summary>
+            <p>Respuesta</p>
+        </details>
+
+
+        <section class="cta-final">
+
+            <div class="container">
+
+                <h2>¿Qué historia quieres tejer?</h2>
+
+                <p>
+                    Puede ser una persona, una mascota, un recuerdo
+                    o simplemente una idea que quieras convertir en algo tangible.
+                </p>
+
+                <a href="personaliza.html">
+                    Crear mi historia
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
-    <footer></footer>
+    <footer>
+
+
+        <div class="footer-container">
+
+            <div class="footer-marca">
+                <img src="assets/img/logo-sin-texto.png" alt="Logo de Historias Tejidas">
+
+                <p>
+                    Donde el hilo se vuelve recuerdo.
+                </p>
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Navegación</h3>
+
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="personaliza.html">Personaliza</a>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Ayuda</h3>
+
+                <a href="#faq">Preguntas frecuentes</a>
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Información</h3>
+
+                <a href="politica-privacidad.html">
+                    Política de privacidad
+                </a>
+
+                <a href="terminos.html">
+                    Términos y condiciones
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Historias Tejidas. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
 </body>
+
 </html>
