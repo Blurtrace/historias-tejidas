@@ -386,6 +386,91 @@ nav a:hover {
     color: var(--blanco);
 }
 
+/* ------------------------------------------------------------------------------
+======================================FOOTER====================================== 
+--------------------------------------------------------------------------------*/
+.footer-container {
+    background-color: var(--rosa-crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-container .footer-marca {
+    margin: var(--margin-05);
+    padding: var(--padding-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.footer-container .footer-marca img {
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-rdp);
+    transition:
+        transform var(--transicion);
+}
+
+.footer-container .footer-marca p {
+    font-weight: var(--negrita);
+    color: var(--rosa-principal);
+}
+
+
+.footer-container .footer-marca img:hover {
+    transform: translateY(-3px);
+}
+
+.footer-container .footer-columna {
+    background-color: var(--rosa-crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-container .footer-columna a {
+    background: var(--rosa-palido);
+    border-radius: var(--border-rdp);
+
+    padding: var(--padding-1);
+
+    color: var(--rosa-principal);
+    text-decoration: none;
+    font-weight: var(--negrita);
+
+    transition:
+        color var(--transicion),
+        background-color var(--transicion),
+        transform var(--transicion);
+
+    border: 2px solid var(--rosa-suave);
+    text-align: center;
+
+    max-width: 220px;
+    max-height: 30px;
+    
+
+}
+
+.footer-container .footer-columna a:hover {
+    background: var(--rosa-principal);
+    color: var(--rosa-crema);
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+
+}
+
 /* ============================================================================
    ESTILOS DE LA BARRA DE DESPLAZAMIENTO (SCROLLBAR)
 ============================================================================ */
@@ -702,8 +787,10 @@ nav a:hover {
     text-align: center;
 }
 
-.resena aside a {
+.resena aside .descuento{
     color: var(--rosa-fuerte);
     text-decoration: none;
 
 }
+
+
